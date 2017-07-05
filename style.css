@@ -1,0 +1,34 @@
+
+
+body {
+	font-family: "Gotham Pro";
+	-webkit-text-size-adjust: none;
+	-webkit-overflow-scrolling: touch;
+}
+
+.hide {
+	display: none;
+	&__{
+	display: none;
+	}
+}
+
+/* slides */
+
+.slides {
+	width: 1024px;
+	height: 768px;
+	overflow: hidden;
+	position: relative;
+	background: #3890b4 url(../img/bg.png) no-repeat;
+	background-size: 1024px 768px;
+}
+.slides__body {
+	width: 1024px;
+	height: 768px;
+	position: relative;
+}
+
+
+.empty {
+}

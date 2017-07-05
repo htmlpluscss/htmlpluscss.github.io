@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Park BT</title>
+	<meta charset="windows-1251">
+	<link href="css/style.css" rel="stylesheet">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+	<script src="js/js.js"></script>
+	<meta name="viewport" content="width=device-width">
+	<!--[if lt IE 9]><script src="js/html5.js"></script><link href="css/ie8.css" rel="stylesheet"><![endif]-->
+</head>
+
+<body class="checkout">
+
+<header class="header">
+	<div class="center">
+
+		<a href="/" class="logo"><img src="images/logo.png" alt=""></a>
+		<a href="/" class="back_shop">Продолжить покупки</a>
+		<a href="#" class="user_profile">+7 (495) 68*-**-*2</a>
+		<a class="exit"></a>
+		<span class="location">Москва</span>
+
+	</div>
+</header>
+
+<main class="checkout_finish cf2 clr">
+	<div class="center">
+
+		<article>
+
+			<h1>Ваш заказ принят</h1>
+
+			<p>Вашему заказу присвоен номер <b>565389</b>.</p>
+			<p>В течение 15 минут наш менеджер свяжется с вами, чтобы уточнить подробности.</p>
+			<p><b>Вам понравился наш магазин?</b> Оставьте отзыв в Яндекс.Маркете и получите персональную скидку на ваш заказ.</p>
+
+			<a href="#" class="button grey" target="_blank" rel="nofollow">Оставить отзыв</a>
+			<a href="#" class="button white">Вернуться в магазин</a>
+
+		</article>
+
+	</div>
+</main>
+
+<footer class="footer cf2">
+	<div class="center">
+
+		<p class="tel">Служба клиентской поддержки <a>8 800 737-55-55</a></p>
+		<p class="copyright">© 1993–2014 ParkBT.ru</p>
+
+	</div>
+</footer>
+
+<div class="alert_up avtoriz">
+	<h3>Вход в личный кабинет</h3>
+	<p class="text">Введите номер вашего мобильного<br> телефона и получите пароль</p>
+	<form>
+		<label class="tel label"><input type="tel" class="input phone"></label>
+		<span class="label"><button class="button" type="button" onclick="alert_top($('.alert_up.sms'))">получить пароль</button></span>
+	</form>
+	<p class="info">Ваш личный кабинет будет привязан к мобильному телефону, включая данные о доставке товаров и персональных бонусах.</p>
+	<span class="close"></span>
+</div>
+
+<div class="alert_up sms">
+	<h3>Вход в личный кабинет</h3>
+	<p class="text">Введите пароль, пришедший на ваш телефон</p>
+	<form>
+		<label class="tel label"><input type="tel" class="input"></label>
+		<span class="label"><button class="button" type="submit">войти</button></span>
+	</form>
+	<span class="close"></span>
+</div>
+
+<div class="alert_up location_form">
+	<h3>Ваш город</h3>
+	<p class="text">Возможен самовывоз в городах:</p>
+	<ul>
+		<li><span>Москва</span></li>
+		<li><span>Екатеринбург</span></li>
+		<li><span>Санкт-Петербург</span></li>
+		<li><span>Новосибирск</span></li>
+	</ul>
+	<p class="text pb5">Или выберите свой город доставки</p>
+	<form>
+		<input class="input input_border" value="Пенза">
+	</form>
+	<span class="close"></span>
+</div>
+
+<div class="alert_up buy_one_click_form">
+	<h3>Быстрый заказ</h3>
+	<form>
+		<label class="label"><span>Номер телефона</span> <input type="tel" class="input input_border phone"></label>
+		<label class="label"><span>Ваше имя</span><input type="text" class="input input_border" placeholder="желательно"></label>
+		<label class="label"><span>Электронная почта</span><input type="email" class="input input_border" placeholder="желательно"></label>
+		<span class="label"><button class="button" type="button" onclick="alert_top($('.alert_up.thanks'))">отправить</button></span>
+		<p class="info">На электронную почту мы сможем отправлять информацию о статусе заказа.</p>
+	</form>
+	<span class="close"></span>
+</div>
+
+<div class="alert_up thanks">
+	<h3>Ваш заказ принят</h3>
+	<p>Вашему заказу присвоен номер <b>565389</b>.</p>
+	<p>В течение 15 минут наш менеджер свяжется<br> с вами, чтобы уточнить подробности.</p>
+	<span class="close"></span>
+</div>
+
+</body>
+</html>

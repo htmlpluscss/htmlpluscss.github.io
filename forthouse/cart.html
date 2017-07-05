@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Корзина</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link href="css/style.css" rel="stylesheet">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+
+	<script src="js/jquery-ui.min.js"></script>
+
+	<script src="js/js.js"></script>
+	<meta name="viewport" content="width=1000">
+	<!--[if lt IE 9]><script src="js/html5.js"></script><link href="css/style_ie.css" rel="stylesheet" type="text/css"><![endif]-->
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+	<header id="header">
+		<div class="center">
+			<a href="/asko" class="logo"><img src="images/logo.png" alt="Asko">Шведское качество с 1950</a>
+			<nav>
+				<ul>
+					<li class="logo_home"><a href="/"></a></li>
+					<li class="active"><a href="#">Asko</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">Доставка и оплата</a></li>
+					<li><a href="#">Гарантия</a></li>
+				</ul>
+			</nav>
+			<form class="search">
+				<input type="text" class="input" onfocus="if(this.value=='Поиск...') this.value=''" onblur="if(this.value=='') this.value='Поиск...'" value="Поиск...">
+				<button type="submit" class="button"></button>
+			</form>
+			<a href="#" class="cart"><i>1</i>56 900 руб.</a>
+			<span class="callback">Заказать звонок</span>
+			<p class="tel"><span>Москва<br> <a><i>+7 495</i> 212-14-30</a></span> <span>Санкт-Петербург<br> <a><i>+7 812</i> 212-14-30</a></span></p>
+		</div>
+	</header>
+
+	<nav class="menu">
+		<ul class="center">
+			<li><a href="#">Почему Asko</a></li>
+			<li class="active"><a href="#">Техника для кухни</a>
+				<div class="sub">
+					<div class="center">
+						<ul class="first">
+							<li><a href="#">Духовые шкафы</a></li>
+							<li><a href="#">Пиролитические духовые шкафы</a></li>
+							<li><a href="#">Водяная очистка духовок</a></li>
+							<li><a href="#">Духовые шкафы с паром</a></li>
+						</ul>
+
+						<ul>
+							<li><a href="#">Вытяжки</a></li>
+							<li><a href="#">Каминного типа</a></li>
+							<li><a href="#">Встраиваемые</a></li>
+							<li><a href="#">Под полочку</a></li>
+						</ul>
+
+						<ul class="w230">
+							<li><a href="#">Посудомоечные машины</a></li>
+							<li><a href="#">Встраиваемые</a></li>
+							<li><a href="#">Полновстраиваемые</a></li>
+							<li><a href="#">Отдельностоящие</a></li>
+						</ul>
+
+						<ul>
+							<li><a href="#">Рабочие поверхности</a></li>
+							<li><a href="#">Газовые рабочие поверхности</a></li>
+							<li><a href="#">Индукционные рабочие поверхности</a></li>
+							<li><a href="#">Газ на стекле</a></li>
+						</ul>
+
+						<ul class="first va-t">
+							<li><a href="#">Как готовить с ASKO</a></li>
+							<li><a href="#">Преимущество духовок ASKO</a></li>
+							<li><a href="#">Шеф повара ASKO</a></li>
+							<li><a href="#">Как работают газовые поверхности</a></li>
+							<li><a href="#">Готовим на индукционных поверхностях</a></li>
+							<li><a href="#">Вытяжки ASKO в помощь</a></li>
+						</ul>
+						<ul class="w260">
+							<li><a href="#">Преимущества посудомоечных машин ASKO</a></li>
+							<li><a href="#">Система “Супер чистота +”</a></li>
+							<li><a href="#">Турбосушка</a></li>
+						</ul>
+
+					</div>
+				</div>
+			</li>
+			<li><a href="#">Уход за бельем</a></li>
+			<li><a href="#">Гарантия</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<section class="cart bg">
+			<div class="center">
+
+				<ul class="breadcrumbs">
+					<li><a href="/">ASKO</a></li>
+					<li>Оформление заказа</li>
+				</ul>
+
+				<h1>Оформление заказа</h1>
+				<table class="list">
+					<thead>
+						<tr>
+							<td></td>
+							<td>Наименование</td>
+							<td>Количество</td>
+							<td>Цена, руб.</td>
+							<td>Сумма, руб.</td>
+							<td></td>
+						</tr>
+					</thead>
+					<tbody class="border">
+						<tr>
+							<td><a class="img" href="#"><img src="img/product.png" alt=""></a></td>
+							<td>
+								<a class="link" href="#">Духовой шкаф Asko OT8601 Aqua Clean</a>
+								<p class="available">есть в наличии</p>
+							</td>
+							<td>
+								<span class="quantity">
+									<span class="result">1</span>
+									<span class="down"></span>
+									<span class="up"></span>
+									<input type="hidden" value="1" class="count">
+									<input type="hidden" value="56000" class="price">
+								</span>
+							</td>
+							<td class="price">56 000</td>
+							<td class="summ_price">56 000</td>
+							<td><button class="button remove"></button></td>
+						</tr>
+						<tr>
+							<td><a class="img" href="#"><img src="img/product.png" alt=""></a></td>
+							<td>
+								<a class="link" href="#">Духовой шкаф Asko OT8601 Aqua Clean</a>
+								<p class="available">есть в наличии</p>
+							</td>
+							<td>
+								<span class="quantity">
+									<span class="result">1</span>
+									<span class="down"></span>
+									<span class="up"></span>
+									<input type="hidden" value="1" class="count">
+									<input type="hidden" value="56000" class="price">
+								</span>
+							</td>
+							<td class="price">56 000</td>
+							<td class="summ_price">56 000</td>
+							<td><button class="button remove"></button></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="5">
+								Итого: <b><span class="total">112 000</span> руб.</b>
+							</td>
+							<td></td>
+						</tr>
+					</tfoot>
+				</table>
+
+				<dl class="tabs clr">
+					<dt>Полный заказ</dt>
+					<dd class="border">
+						<form>
+							<label for="">Ваше ФИО<sup>*</sup></label>
+							<input type="text" class="input">
+							<label for="">Ваш Телефон<sup>*</sup></label>
+							<input type="text" class="input">
+							<label for="">Адрес доставки<sup>*</sup></label>
+							<input type="text" class="input">
+							<label for="">Дата доставки<sup>*</sup></label>
+							<input type="text" class="input date" value="20.11.2014">
+							<label for="">Время доставки</label>
+							<span class="select">
+								<select>
+									<option value="с 9:00 до 12:00">с 9:00 до 12:00</option>
+									<option value="с 12:00 до 18:00">с 12:00 до 18:00</option>
+									<option value="с 18:00 до 23:00">с 18:00 до 23:00</option>
+								</select>			
+							</span>
+							<label for="">Лифт</label>
+							<label class="radio_type mb0"><i></i><input type="radio" name="lift" value="0">пассажирский</label>
+							<label class="radio_type ml188 mb0"><i></i><input type="radio" name="lift" value="1">грузовой</label>
+							<label class="radio_type ml188"><i></i><input type="radio" name="lift" value="2">отсутствует</label>
+							<label for="">Способ оплаты</label>
+							<label class="radio_type mb0"><i></i><input type="radio" name="pay" value="1">наличными</label>
+							<label class="radio_type ml188 mb0"><i></i><input type="radio" name="pay" value="2">безналичным платежом</label>
+							<label class="radio_type ml188"><i></i><input type="radio" name="pay" value="3">кредитной карточкой</label>
+							<label for="">Дополнительная информация</label>
+							<textarea></textarea>
+							<p><sup>*</sup> - поля обязательны для заполнения</p>
+							<button type="submit" class="button red ml188">Оформить заказ</button>
+						</form>
+					</dd>
+					<dt>Быстрый заказ</dt>
+					<dd class="border">
+						<form>
+							<label for="">Ваше ФИО<sup>*</sup></label>
+							<input type="text" class="input">
+							<label for="">Ваш Телефон<sup>*</sup></label>
+							<input type="text" class="input">
+							<p><sup>*</sup> - поля обязательны для заполнения</p>
+							<button type="submit" class="button red ml188">Оформить заказ</button>
+						</form>
+					</dd>
+				</dl>
+
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="center">
+			<nav>
+				<ul>
+					<li class="active"><a href="#">ASKO</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">Доставка и оплата</a></li>
+					<li><a href="#">Гарантия</a></li>
+				</ul>
+			</nav>
+			<div class="contact">
+				<a href="mailto:info@asko-russia.ru">info@asko-russia.ru</a>
+				<p>+7 <span>(495)</span> 212-14-30 <i>(Москва)</i><br> +7 <span>(800)</span> 333-42-62 <i>(Санкт-Петербург)</i></p>
+			</div>
+			<p class="copyright">© 2014 <strong>Фирменный магазин ASKO</strong><br> RET Ltd., 13, Kosigina st., Moscow, Russia</p>
+			<div class="counters">
+				<img src="img/counter.png" alt="">
+			</div>
+		</div>
+	</footer>
+	
+	<div class="bg_up"></div>
+
+	<div class="alert_up callback">
+		<h3 class="outline">Заказать звонок</h3>
+		<form class="outline">
+			<p>Оставьте свой телефон и мы Вам перезвоним</p>
+			<label><i>Ваше Имя</i><input type="text" class="input"></label>
+			<label><i>Ваш Телефон</i><input type="text" class="input"></label>
+			<button class="button grey" type="button" onclick="alert_top($('.alert_up.thanks'))">Отправить</button>
+		</form>
+		<span class="close"></span>
+	</div>
+
+	<div class="alert_up thanks">
+		<h3 class="outline">Спасибо!</h3>
+		<div class="outline">
+			<p>Мы Вам перезвоним.</p>
+			<button class="button red" type="button" onclick="bg.triggerHandler('click')">Закрыть</button>
+		</div>
+		<span class="close"></span>
+	</div>
+
+</body>
+</html>

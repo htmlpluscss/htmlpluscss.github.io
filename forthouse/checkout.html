@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Park BT</title>
+	<meta charset="windows-1251">
+	<link href="css/style.css" rel="stylesheet">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+	<script src="js/js.js"></script>
+	<meta name="viewport" content="width=device-width">
+	<!--[if lt IE 9]><script src="js/html5.js"></script><link href="css/ie8.css" rel="stylesheet"><![endif]-->
+</head>
+
+<body class="checkout">
+
+<header class="header">
+	<div class="center">
+
+		<a href="/" class="logo"><img src="images/logo.png" alt=""></a>
+		<a href="/" class="back_shop">Продолжить покупки</a>
+		<a href="#" class="user_profile">+7 (495) 68*-**-*2</a>
+		<a class="exit"></a>
+		<span class="location">Москва</span>
+
+	</div>
+</header>
+
+<main class="checkout_page cf2">
+	<div class="center">
+
+		<article>
+
+			<h1>Оформление заказа</h1>
+
+			<div class="right">				
+				<div class="desc_zakaz">
+					<h4>Ваш заказ</h4>
+					<a href="#"><img src="img/cart_03.png" alt=""></a>
+					<a href="#"><img src="img/cart_05.png" alt=""></a>
+					<p>2 товара на сумму <span class="rub">258 000 <i>рублей</i></span> <a href="#">Редактировать заказ</a></p>
+				</div>
+				<div class="info_contact">
+					<p>Служба клиентской поддержки</p>
+					<p class="tel">8 800 737-55-55</p>
+					<ul>
+						<li><a href="#">Как заказать</a></li>
+						<li><a href="#">Оплата</a></li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Возврат</a></li>
+						<li><a href="#">Гарантии</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<form>
+				<h3 class="mb14">Заказчик</h3>
+				<label for="fio">Ф. И. О.</label>
+				<input type="text" class="input" value="Константинопольский Константин Константинович" id="fio">
+				<label for="email">Электронная почта</label>
+				<input type="email" class="input" value="k.konstantin@gmail.com" id="email">
+				<span class="suf">будем отправлять информацию<br> о статусе заказа</span>
+				<label>Я покупаю</label>
+				<span class="select">
+					<select>
+						<option value="1">для себя</option>
+						<option value="2">в подарок</option>
+					</select>
+				</span>
+
+				<h3 class="mt25">Доставка</h3>
+				<span class="ship_city">Ваш город: <span class="location">Москва</span></span>
+				<label class="radio_type but"><i></i>
+					<input type="radio" checked="checked" name="shipping" data-name="shipping" data-show="value_1">Самовывоз 
+					<span>бесплатно, завтра</span>
+				</label>
+				<label class="radio_type but"><i></i>
+					<input type="radio" name="shipping" data-name="shipping" data-hide="value_1">Курьер 
+					<span><span class="rub">199 <i>рублей</i></span>, завтра</span>
+				</label>
+				<label class="radio_type but"><i></i>
+					<input type="radio" name="shipping" data-name="shipping" data-hide="value_1">EMS Почта России 
+					<span><span class="rub">399 <i>рублей</i></span>, 3–5 дней</span>
+				</label>
+
+				<div class="value_1 add_block">
+					<label>Пункт самовывоза</label>
+					<span class="select">
+						<select>
+							<option value="1">Магазин Park BT, Москва, ул. Профсоюзная, 56</option>
+						</select>
+					</span>
+				</div>
+
+				<h3 class="mt25 mb18">Оплата</h3>
+				<label class="radio_type but"><i></i>
+					<input type="radio" name="paymend" data-name="paymend" data-show="value_2">При получении
+				</label>
+				<label class="radio_type but"><i></i>
+					<input type="radio" name="paymend" data-name="paymend" data-show="value_2">Предоплата
+				</label>
+				<label class="radio_type but"><i></i>
+					<input type="radio" name="paymend" data-name="paymend" data-hide="value_2">В кредит
+				</label>
+
+				<div class="value_2 hide add_block">
+					<label>Способ оплаты</label>
+					<span class="select">
+						<select>
+							<option value="1">Банковской картой</option>
+						</select>
+					</span>
+				</div>
+
+				<label for="discount">У меня есть дисконтная карта Park BT</label>
+				<input type="text" id="discount" class="input" value="5569-4010">
+				<span class="suf">карту можно получить при<br> заказе от 5 тысяч рублей</span>
+				<p class="sale">Ваша скидка: <span class="rub">- 3000 <i>рублей</i></span></p>
+
+				<p class="total_pay">Итого к оплате, с учетом<br> скидок и доставки: <span class="rub">255 000 <i>рублей</i></span></p>
+
+				<p class="rules">Оформляя заказ, я соглашаюсь<br> с <a href="#">правилами и условиями продаж</a></p>
+
+				<button class="button" type="submit">подтвердить заказ</button>
+
+			</form>
+		</article>
+
+	</div>
+</main>
+
+<footer class="footer cf2">
+	<div class="center">
+
+		<p class="tel">Служба клиентской поддержки <a>8 800 737-55-55</a></p>
+		<p class="copyright">© 1993–2014 ParkBT.ru</p>
+
+	</div>
+</footer>
+
+<div class="alert_up avtoriz">
+	<h3>Вход в личный кабинет</h3>
+	<p class="text">Введите номер вашего мобильного<br> телефона и получите пароль</p>
+	<form>
+		<label class="tel label"><input type="tel" class="input phone"></label>
+		<span class="label"><button class="button" type="button" onclick="alert_top($('.alert_up.sms'))">получить пароль</button></span>
+	</form>
+	<p class="info">Ваш личный кабинет будет привязан к мобильному телефону, включая данные о доставке товаров и персональных бонусах.</p>
+	<span class="close"></span>
+</div>
+
+<div class="alert_up sms">
+	<h3>Вход в личный кабинет</h3>
+	<p class="text">Введите пароль, пришедший на ваш телефон</p>
+	<form>
+		<label class="tel label"><input type="tel" class="input"></label>
+		<span class="label"><button class="button" type="submit">войти</button></span>
+	</form>
+	<span class="close"></span>
+</div>
+
+<div class="alert_up location_form">
+	<h3>Ваш город</h3>
+	<p class="text">Возможен самовывоз в городах:</p>
+	<ul>
+		<li><span>Москва</span></li>
+		<li><span>Екатеринбург</span></li>
+		<li><span>Санкт-Петербург</span></li>
+		<li><span>Новосибирск</span></li>
+	</ul>
+	<p class="text pb5">Или выберите свой город доставки</p>
+	<form>
+		<input class="input input_border" value="Пенза">
+	</form>
+	<span class="close"></span>
+</div>
+
+<div class="alert_up buy_one_click_form">
+	<h3>Быстрый заказ</h3>
+	<form>
+		<label class="label"><span>Номер телефона</span> <input type="tel" class="input input_border phone"></label>
+		<label class="label"><span>Ваше имя</span><input type="text" class="input input_border" placeholder="желательно"></label>
+		<label class="label"><span>Электронная почта</span><input type="email" class="input input_border" placeholder="желательно"></label>
+		<span class="label"><button class="button" type="button" onclick="alert_top($('.alert_up.thanks'))">отправить</button></span>
+		<p class="info">На электронную почту мы сможем отправлять информацию о статусе заказа.</p>
+	</form>
+	<span class="close"></span>
+</div>
+
+<div class="alert_up thanks">
+	<h3>Ваш заказ принят</h3>
+	<p>Вашему заказу присвоен номер <b>565389</b>.</p>
+	<p>В течение 15 минут наш менеджер свяжется<br> с вами, чтобы уточнить подробности.</p>
+	<span class="close"></span>
+</div>
+
+</body>
+</html>
