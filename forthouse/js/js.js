@@ -337,22 +337,27 @@ $window.ready(function(){
 
 
 // fancy
-	if($('.catalogue-5').is('.catalogue-5')){
-		$('.img_big a').fancybox({
-			padding : 5,
-			helpers : {
-				media : {}
-			}
-		});
-		$('.play_video').on('click',function(){
-			$('.img_big a.video').trigger('click');
+	if($('[data-fancybox]').length>0){
+
+		$.getScript("/js/jquery.fancybox.min.js", function(){
+
+			$('.img_big a').fancybox({
+				padding : 5,
+				helpers : {
+					media : {}
+				}
+			});
+			$('.play_video').on('click',function(){
+				$('.img_big a.video').trigger('click');
+			});
+
+			$('.img_small img').on('click',function(){
+				var n = $('.img_big a').eq($(this).index());
+				$('.img_big a').not(n).hide();
+				n.show();
+			});
 		});
 
-		$('.img_small img').on('click',function(){
-			var n = $('.img_big a').eq($(this).index());
-			$('.img_big a').not(n).hide();
-			n.show();
-		});
 	}
 
 // quantity
