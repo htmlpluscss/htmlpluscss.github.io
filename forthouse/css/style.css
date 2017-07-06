@@ -673,11 +673,6 @@ h1 {
 .breadcrumbs .scroll.not_grad:after {
 	height: 0;
 }
-.nicescroll-rails {
-	background: #fff;
-	margin-left: -2px;
-	padding:0 1px;
-}
 
 
 /* catalogue-1

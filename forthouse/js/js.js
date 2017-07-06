@@ -30,26 +30,6 @@ $window.ready(function(){
 
 	$window.trigger('resize').trigger('scroll');
 
-// NiceScroll
-	if(window.NiceScroll){
-		$('.scroll').wrapInner('<div class="box"></div>');
-		$('.scroll .box').niceScroll({
-			zindex:20,
-			cursorwidth:6,
-			cursoropacitymin:1,
-			cursorcolor:'#c7c7c7',
-			horizrailenabled:false,
-			mousescrollstep:3
-		});
-		$('.scroll .box').on('scroll',function(){
-			var sc = $(this).siblings('.nicescroll-rails');
-			if(sc.children().outerHeight()+sc.children().position().top+10 > sc.outerHeight())
-				$(this).parent().addClass('not_grad');
-			else
-				$(this).parent().removeClass('not_grad');
-		});
-	}
-
 // slider
 	$('.slider').each(function(){
 		var s = $(this);
@@ -134,8 +114,6 @@ $window.ready(function(){
 					$('body').addClass('menu_hover');
 					bg.fadeIn(function(){
 						ul.fadeIn();
-						if(ul.hasClass('scroll'))
-							$('.scroll .box').getNiceScroll().resize();
 					});
 				}
 			},300);
