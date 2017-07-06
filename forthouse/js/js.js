@@ -18,8 +18,6 @@ $window.on('resize',function(){
 		windowHeight = $window.height();
 		windowWidth = $window.width();
 
-// min height
-        $('main').css('min-height',windowHeight - $('.footer').outerHeight(true) - $('.header').outerHeight(true) - $('main').outerHeight(true) + $('main').height());
 // map
 		$('.box_map').width(windowWidth).css('margin-left',-windowWidth/2);
 	},1);
@@ -394,7 +392,7 @@ $window.ready(function(){
 			price = parseInt(price);
 			price = price * count;
 			s += price;
-			$(this).parent().siblings('.price').find('.summ').text(sep(price));
+			$(this).parent().siblings('.price').find('.summ--total').text(sep(price));
 		});
 		$('.foot_total .result').text(sep(s));
 	}

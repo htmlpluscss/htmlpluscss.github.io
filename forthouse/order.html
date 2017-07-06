@@ -2,7 +2,7 @@
 
 <!--#include file="_header2.html"-->
 
-<main class="cart_page cf2">
+<main class="cart_page cart_page--order cf2">
 	<div class="center">
 
 		<article>
@@ -22,13 +22,16 @@
 							<a href="#">Кофемашина Miele CVA 3650 сталь CleanSteel</a>
 							<span class="art">Артикул: M3650CS</span>
 						</td>
-						<td class="price">
-							<span class="rub"><span class="summ">69 000</span> <i>рублей</i></span>
-						</td>
 						<td class="count">
 							<span class="minus"></span>
 							<span class="value" data-price="69000">1</span>
 							<span class="plus"></span>
+						</td>
+						<td class="price">
+							<span class="rub"><span class="summ">69 000</span> <i>рублей</i></span>
+						</td>
+						<td class="price">
+							<span class="rub"><span class="summ summ--total">69 000</span> <i>рублей</i></span>
 						</td>
 						<td>
 							<span class="delete"></span>
@@ -42,13 +45,16 @@
 							<a href="#">Холодильник Side by Side Liebherr SBS es 7165</a>
 							<span class="art">Артикул: L7165SBS</span>
 						</td>
-						<td class="price">
-							<span class="rub"><span class="summ">189 000</span> <i>рублей</i></span>
-						</td>
 						<td class="count">
 							<span class="minus"></span>
 							<span class="value" data-price="189000">1</span>
 							<span class="plus"></span>
+						</td>
+						<td class="price">
+							<span class="rub"><span class="summ">189 000</span> <i>рублей</i></span>
+						</td>
+						<td class="price">
+							<span class="rub"><span class="summ summ--total">189 000</span> <i>рублей</i></span>
 						</td>
 						<td>
 							<span class="delete"></span>
@@ -58,9 +64,17 @@
 
 				<div class="foot_total clr">
 
-					<p>Сумма заказа: <span class="rub"><span class="result">258 000</span> <i>рублей</i></span></p>
-					<button class="button" type="submit">Оформить</button>
-					<span class="button grey buy_one_click">Заказать в 1 клик</span>
+					<a href="#" class="button grey">Вернуться к товарам</a>
+
+					<div class="foot_total-right">
+
+						<p>Сумма заказа: <span class="rub"><span class="result">258 000</span> <i>рублей</i></span></p>
+
+						<p>Доставка по Москве в пределах МКАД и Санкт-Петербургу в пределах КАД - <span class="red">бесплатная.</span></p>
+
+						<button class="button" type="submit">Продолжить</button>
+
+					</div>
 
 				</div>
 
@@ -68,9 +82,120 @@
 
 		</article>
 
+		<form class="order">
+
+			<h2>Оформление заказа</h2>
+
+			<div class="order__column">
+
+			Физическое лицо
+			Юридическое лицо
+
+				<div class="order__input-box order__label--requred">
+
+					<label class="order__label">Ваше ФИО</label>
+					<input class="order__input">
+
+				</div>
+
+				<div class="order__input-box order__label--requred">
+
+					<label class="order__label">Ваш Телефон</label>
+					<input class="order__input" type="tel">
+
+				</div>
+
+				<div class="order__input-box order__label--requred">
+
+					<label class="order__label">Адрес</label>
+					<input class="order__input">
+
+				</div>
+
+				<div class="order__input-box">
+
+					<label class="order__label">Лифт</label>
+
+					<div class="radio-inline">
+
+						<label class="checkbox-radio">
+							Нет
+							<input type="checkbox" name="elevator" checked="checked">
+						</label>
+
+						<label class="checkbox-radio">
+							Грузовой
+							<input type="checkbox" name="elevator">
+						</label>
+
+						<label class="checkbox-radio">
+							Пассажирский
+							<input type="checkbox" name="elevator">
+						</label>
+
+					</div>
+
+				</div>
+
+				<div class="order__input-box">
+
+					<label class="order__label order__label--requred">Дата доставки</label>
+					<input class="order__input">
+
+				</div>
+
+
+				<div class="order__input-box">
+
+					<label class="order__label">Способ оплаты</label>
+
+					<div class="radio-block">
+
+						<label class="checkbox-radio checkbox-radio--ico-1">
+							Безналичный расчет
+							<input type="checkbox" name="payment">
+						</label>
+
+						<label class="checkbox-radio checkbox-radio--ico-2">
+							Наличными
+							<input type="checkbox" name="payment">
+						</label>
+
+						<label class="checkbox-radio checkbox-radio--ico-3">
+							Терминал при доставке
+							<input type="checkbox" name="payment">
+						</label>
+
+						<label class="checkbox-radio checkbox-radio--ico-4">
+							Терминал при доставке
+							<input type="checkbox" name="payment">
+						</label>
+
+					</div>
+
+				</div>
+
+				<div class="order__input-box">
+
+					<label class="order__label">Метро</label>
+					<input class="order__input">
+
+				</div>
+
+				<div class="order__input-box">
+
+					<label class="order__label">Комментарий</label>
+					<textarea class="order__input"></textarea>
+
+				</div>
+
+			</div>
+
+			<button class="button" type="submit">Оформить заказ</button>
+
+		</form>
+
 	</div>
 </main>
-
-<!--#include file="_related.html"-->
 
 <!--#include file="_footer.html"-->
