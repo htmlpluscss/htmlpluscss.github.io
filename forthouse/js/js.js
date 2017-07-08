@@ -362,12 +362,16 @@ $window.ready(function(){
 
 // quantity
 	$('.cart_page .minus, .cart_page .plus').on('click',function(){
-		var v = $(this).siblings('.value').text();
+		var v = $(this).siblings('.value').children().val();
 		v = parseInt(v);
 		v += ($(this).hasClass('plus')) ? 1 : -1;
-		if(v==0)
+		if(v<1 || isNaN(v))
 			v=1;
-		$(this).siblings('.value').text(v);
+		$(this).siblings('.value').children().val(v);
+		summ();
+	});
+// input
+	$('.cart_page .value').children().on('blur change keyup',function(){
 		summ();
 	});
 // cart del
@@ -390,9 +394,12 @@ $window.ready(function(){
 	function summ() {
 		var s = 0;
 		$('.cart_page .value').each(function(){
-			var count = $(this).text();
+			var count = $(this).children().val();
 			var price = $(this).attr('data-price');
 			count = parseInt(count);
+			if(isNaN(count)){
+				count = 0;
+			}
 			price = price.replace(/ /g,'');
 			price = parseInt(price);
 			price = price * count;
