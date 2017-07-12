@@ -3076,6 +3076,57 @@ b.text-content__red {
 	content: counter(headings, decimal);
 }
 
+/* datepicker
+--------------------------*/
+.ui-datepicker {
+	display: none;
+	padding: 10px;
+	width: 250px;
+	background: #fff;
+	text-align: center;
+	border-radius: 4px;
+	border: 1px solid #797d7d
+}
+.ui-datepicker-calendar {
+	width: 100%;
+	line-height: 30px
+}
+.ui-datepicker-title {
+	padding: 10px;
+}
+.ui-datepicker-next,
+.ui-datepicker-prev {
+	position: absolute;
+	top: 20px;
+	left: 16px;
+	border-top: 1px solid #fa481c;
+	border-left: 1px solid #fa481c;
+	height: 14px;
+	width: 14px;
+	-webkit-transform: rotate(135deg);
+	transform: rotate(135deg);
+	cursor: pointer;
+}
+.ui-datepicker-prev {
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.ui-datepicker-next {
+	left: auto;
+	right: 16px;
+}
+.ui-datepicker-next span,
+.ui-datepicker-prev span {
+	display: none;
+}
+.ui-datepicker-calendar a{
+	color: #fa481c;
+	display: block;
+}
+.ui-datepicker-calendar a:hover{
+	font-weight: 700;
+}
+
 /* shops
 -----------------------------------------------------------------------------*/
 .shops {

@@ -231,45 +231,49 @@ $window.ready(function(){
 // slider-range
 	if($('.slide_price').is('.slide_price')){
 
-		$('.slide_price').each(function(i){
-			var t = $(this);
-			var from = t.find('.from');
-			var to = t.find('.to');
-			var s = t.children('.rang');
+		$.getScript("/js/jquery-ui.min.js", function(){
 
-			var min = parseInt(s.attr('data-min'));
-			var max = parseInt(s.attr('data-max'));
-			var step = parseInt(s.attr('data-step'));
+			$('.slide_price').each(function(i){
+				var t = $(this);
+				var from = t.find('.from');
+				var to = t.find('.to');
+				var s = t.children('.rang');
 
-			s.slider({
-				range: true,
-				min:min,
-				max:max,
-				step:step,
-				values: [min, max],
-				slide: function(event,ui) {
-					if(ui.values[0] == ui.values[1])
-						return false;
-					from.val(sep(ui.values[0])),
-					to.val(sep(ui.values[1]));
-				}
+				var min = parseInt(s.attr('data-min'));
+				var max = parseInt(s.attr('data-max'));
+				var step = parseInt(s.attr('data-step'));
+
+				s.slider({
+					range: true,
+					min:min,
+					max:max,
+					step:step,
+					values: [min, max],
+					slide: function(event,ui) {
+						if(ui.values[0] == ui.values[1])
+							return false;
+						from.val(sep(ui.values[0])),
+						to.val(sep(ui.values[1]));
+					}
+				});
+				from.val(sep(min)).on('change blur',function(){
+					var v = str_to_number(from.val());
+					if(v<min) {
+						from.val(min);
+						v = min;
+					}
+					s.slider('values', 0, v);
+				});
+				to.val(sep(max)).on('change blur',function(){
+					var v = str_to_number(to.val());
+					if(v>max) {
+						to.val(max);
+						v = max;
+					}
+					s.slider('values', 1, v);
+				});
 			});
-			from.val(sep(min)).on('change blur',function(){
-				var v = str_to_number(from.val());
-				if(v<min) {
-					from.val(min);
-					v = min;
-				}
-				s.slider('values', 0, v);
-			});
-			to.val(sep(max)).on('change blur',function(){
-				var v = str_to_number(to.val());
-				if(v>max) {
-					to.val(max);
-					v = max;
-				}
-				s.slider('values', 1, v);
-			});
+
 		});
 	}
 
@@ -359,6 +363,24 @@ $window.ready(function(){
 		});
 
 	}
+
+// slider-range
+
+	if($('.datepicker').length>0){
+
+		$.getScript("/js/jquery-ui.min.js", function(){
+
+			$.getScript("/js/datepicker-ru.js", function(){
+				$.datepicker.setDefaults($.datepicker.regional["ru"]);
+				$('.datepicker').datepicker({
+					minDate: 1
+				});
+			});
+
+		});
+
+	}
+
 
 // quantity
 	$('.cart_page .minus, .cart_page .plus').on('click',function(){

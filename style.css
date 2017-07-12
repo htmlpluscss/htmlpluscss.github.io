@@ -1,5 +1,3 @@
-
-
 body {
 	font-family: "Gotham Pro";
 	-webkit-text-size-adjust: none;
@@ -8,10 +6,8 @@ body {
 
 .hide {
 	display: none;
-	&__{
-	display: none;
-	}
 }
+
 
 /* slides */
 
@@ -23,12 +19,14 @@ body {
 	background: #3890b4 url(../img/bg.png) no-repeat;
 	background-size: 1024px 768px;
 }
+
 .slides__body {
 	width: 1024px;
 	height: 768px;
 	position: relative;
+	&__inner {
+		display: block;
+	}
 }
 
-
-.empty {
-}
+.empty {}
