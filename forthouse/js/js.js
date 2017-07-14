@@ -658,7 +658,7 @@ function ul_width(b,ul,li) {
 function app_nav(s,li){
 	li.first().addClass('first active').end().last().addClass('last');
 	var pagination = $('<div class="nav_pagination">');
-	for(var i = 0; i < li.size(); i++)
+	for(var i = 0; i < li.length; i++)
 		pagination.append('<span></span>');
 	var pagin_li = pagination.children();
 	pagin_li.first().addClass('active first');
